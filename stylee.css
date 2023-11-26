@@ -1,0 +1,77 @@
+/* Reset some default styles */
+body, header, footer, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a dark background to the body */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header with a dark background and negative margins to extend it to the edges */
+header {
+    background-color: #333; /* Dark gray background */
+    margin: -10px;
+    padding: 10px;
+}
+header a:hover{
+    width:2%
+}
+
+/* Style navigation links with hover animations */
+.nav a {
+    border-radius: 6px;
+    background-color:aqua; border-radius: 10px; /* Teal color */
+    color: #fff; /* White text */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out; /* Add smooth transitions */
+}
+
+.nav a:hover {
+    background-color:rgb(219, 219, 248); border-radius: 10px; /* Lighter teal color on hover */
+    transform: scale(2.5s); /* Scale up on hover */
+    font-size: 20px;
+    text-decoration:underline;
+}
+
+/* Style the footer similar to the header */
+footer {
+    background-color: #333; /* Dark gray background */
+    margin: -10px;
+    padding: 10px;
+
+}
+
+footer a{
+    color:azure;
+    transition: 0.5s ease-in-out;
+    width:50px;
+}
+
+
+
+
+footer img:hover{
+    width:2%;
+    transition: all 0.2s ease-in-out;
+}
+/* Style the h1 element with text shadow and centered text with an animation */
+h1 {
+    text-align: center;
+    color: #fff; /* White text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out; /* Add a fade-in animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
